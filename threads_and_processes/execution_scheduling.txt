@@ -1,0 +1,20 @@
+Scheduler:
+- OS function that assigns processes and threads to get their turn to run on available CPU's.
+
+
+LOOK FOR CONTEXT SWITCH
+
+Scheduling Algorithms:
+- First Come, First Served
+- Shortest job next
+- Priority
+- Shortest remaining time
+- Round robin
+- Multiple level queues
+
+
+Scheduling Goals:
+- Maximize throughput
+- Maximize fairness
+- Minimize wait time
+- Minimize latency

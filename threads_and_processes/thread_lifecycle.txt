@@ -1,0 +1,5 @@
+Four stages of the lifecycle of a thread:
+1. new
+2. runnable
+3. blocked
+4. terminated

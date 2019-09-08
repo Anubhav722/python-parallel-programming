@@ -1,0 +1,6 @@
+Concurrency is the ability of a program to be broken into parts that can run independently of each other.
+
+CONCURRENCY VS. PARALLELISM
+
+- Concurrency is about the structure of a program being able to deal with multiple things at once.
+- Parallelism is about simultaneous execution, actually doing multiple things at once.

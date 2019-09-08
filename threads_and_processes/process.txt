@@ -1,0 +1,31 @@
+PROCESS
+
+- includes code, data, and state information
+- each instance of a running program
+- separate address space and memory
+
+
+within every process there are one or more smaller sub-elements called threads. they are like tiny processes.
+
+THREAD
+
+- independent path of execution
+- only exist as a part of a process (subset of a process)
+- threads are the most basic units that operating system manages and it allocates time on the processor to actually execute them (operating system schedules threads for execution)
+
+
+Threads that belong to the same process share the same address space which gives them access to the same resources and memory including the program's executable code and data.
+
+Sharing resources between separate processes is not as easy as sharing between threads in the same process. Because every process exists in its own address space.
+
+There are ways to communicate and share data between processes, but it requires a bit more work than communicating between threads.
+You have to use system provided Inter-Process Communication mechanisms(IPC):
+- like Sockets and Pipes.
+- Allocating special inter-process shared memory space
+- or using remote procedure calls
+
+
+
+THREADS VS. PROCESS
+- Threads are lightweight - require less overhead to create and terminate.
+- OS can switch between threads faster than processes.

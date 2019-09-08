@@ -1,0 +1,16 @@
+Garbage collector:
+- automatic memory management which runs in the background.
+- attempts to reclaim garbage no longer in use by program
+
+Daemon (Background) Thread
+- is a thread that will not prevent the process from terminating if it's still running.
+- By default threads are created as non-daemon.
+
+When the main thread is finished executing and there are no non-daemon threads left running, the original process can terminate and the daemon thread will terminate with it.
+As a result, daemon thread will be abruptly terminated with the process, it didn't have a chance to gracefully shut down.
+
+NOTE: If you detach a thread to make it a background task, make sure it won't have any negative side effects, if it prematurely exits.
+
+- New threads will thread daemon status from their parent.
+- Set the daemon property to change status before starting thread.
+- Daemon threads do not gracefully exit like normal threads.

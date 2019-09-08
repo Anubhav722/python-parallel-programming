@@ -1,0 +1,12 @@
+### Shared Memory
+
+- All processors access the same memory with global address space
+
+Share Memory Architectures
+- Uniform memory access (UMA)
+- Non-uniform memory access (NUMA)
+
+
+- Uniform memory Access (UMA): All of the processors have equal access to the memory meaning they can access it eqaually fast.
+
+Watch the video man ..!!
