@@ -1,0 +1,5 @@
+one of the Main challenges of writing concurrent programs is identifying the possible dependencies between threads to make sure they don't interfere with each other and cause problems
+Data races are a common problem that can occur when two or more threads are concurrently accessing the same memory location and atleast one of those threads is modifying it.
+
+We can protect our program against data races by using synchronization techniques.
+First we need to know how to recognize data races
