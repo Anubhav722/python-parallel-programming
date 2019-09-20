@@ -1,0 +1,21 @@
+Deadlock
+
+- If a thread tries to lock a mutex that is already locked, it'll enter into a waiting list for that mutex.
+All processes and threads are unable to continue executing which results into something called a deadlock.
+
+There may be times when a program needs to lock a mutex multiple times before unlocking it. In that case, we should use a reentrant mutex (lock) to prevent this type of problem.
+
+Reentrant Mutex
+A reentrant mutex is a particular type of mutex that can be locked multiple times by the same thread or process.
+Internally reentrant mutex keeps track of how many times it's been locked by the owing thread, and it has to be unlocked an equal no. of times before another thread can lock it.
+
+
+Common terms which mean the same:
+1. Reentrant mutex
+2. Reentrant lock
+3. Recursive mutex
+4. Recursive lock
+
+LOCK VS RLOCK:
+- Regular lock can be released by a different thread than was used to acquire it.
+- Rlock must be released by the same thread that acquired it. Also it must be released the same number of times it was acquired.

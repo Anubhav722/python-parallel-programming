@@ -1,0 +1,6 @@
+When multiple threads each have multiple tasks to perform, making those threads block and wait, every time they try to acquire a lock that's already taken may not be neccessary or efficient.
+
+TRY LOCK:
+- Non blocking lock/acquire method for mutex. It returns immediately and one of two things will happen.
+- If the mutex we are trying to lock is available, lock it and return true.
+- If the mutex is already possessed by another thread, the try lock method will immediately return false.
